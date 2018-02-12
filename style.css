@@ -131,10 +131,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/*
 #background{
     padding:100px;
     background-color:darkblue;
 }
+*/
 
 #container {
     display: flex;
@@ -148,7 +150,7 @@ table {
     font-size: 4em;
     height: 50vh;
     flex: 50vw;
-    color: white;
+    color: #292E3C;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -166,45 +168,45 @@ table {
 }
 
 #omgeving {
-    background-color: chartreuse;
+    background-color: #242835;
 }
 
 #reis {
-    background-color: hotpink;
+    background-color: #242835;
 }
 
 #voorraad {
-    background-color: lightskyblue;
+    background-color: #242835;
 }
 
 #schip {
-    background-color: orange;
+    background-color: #242835;
 }
 
 #omgevingContainer {
     display: flex;
-    background-color: chartreuse;
+    background-color: #242835;
     color: white;
     height: 100vh;
 }
 
 #schipContainer {
     display: flex;
-    background-color: orange;
+    background-color: #242835;
     color: white;
     height: 100vh;
 }
 
 #voorraadContainer {
     display: flex;
-    background-color: lightskyblue;
+    background-color: #242835;
     color: white;
     height: 100vh;
 }
 
 #reisContainer {
     display: flex;
-    background-color: hotpink;
+    background-color: #242835;
     color: white;
     height: 100vh;
 }
