@@ -1,213 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+ @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+ * {
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ body {
+     background-color: #242835;
+ }
+ 
+ #container {
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     
+ }
+ 
+ canvas {
+     width:90%;
 }
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*
-#background{
-    padding:100px;
-    background-color:darkblue;
-}
-*/
-
-#container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#container a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 4em;
-    height: 50vh;
-    flex: 50vw;
-    color: #292E3C;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-#container a:hover {
-    opacity: 0.6;
-}
-
-#container a img {
-    align-self: center;
-    margin-top: 50px;
-}
-
-#omgeving {
-    background-color: #242835;
-}
-
-#reis {
-    background-color: #242835;
-}
-
-#voorraad {
-    background-color: #242835;
-}
-
-#schip {
-    background-color: #242835;
-}
-
-#omgevingContainer {
-    display: flex;
-    background-color: #242835;
-    color: white;
-    height: 100vh;
-}
-
-#schipContainer {
-    display: flex;
-    background-color: #242835;
-    color: white;
-    height: 100vh;
-}
-
-#voorraadContainer {
-    display: flex;
-    background-color: #242835;
-    color: white;
-    height: 100vh;
-}
-
-#reisContainer {
-    display: flex;
-    background-color: #242835;
-    color: white;
-    height: 100vh;
-}
-
+ 
+ h2 {
+     color: white;
+     font-family: 'Montserrat Alternates', sans-serif;
+     font-size: 2em;
+ }
+ 
+ #container div {
+     background-color: #292E3C;
+     padding: 10px;
+     margin: 20px;
+ }
+ 
+ #chart1 {
+     grid-area: chart1;
+ }
+ 
+ #chart2 {
+     grid-area: chart2;
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ #chart3 {
+     grid-area: chart3;
+ }
+ 
+ #chart4 {
+     grid-area: chart4;
+ }
+ 
+ #chart5 {
+     grid-area: chart5;
+ }
