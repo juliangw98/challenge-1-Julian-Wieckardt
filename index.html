@@ -9,25 +9,26 @@
 <body>
     <div id="container">
         <div id="chart1">
-          <div>
-            <h2>Zwaartekracht</h2>
-            <canvas id="myChart1" ></canvas>
-          </div>
+            <div>
+                <h2>Zwaartekracht</h2>
+                <canvas id="myChart1"></canvas>
+            </div>
         </div>
         <div id="chart2">
-            <h2>brandstof</h2>
-            <canvas id="myChart2" width="80" ></canvas>
+            <h2>waterverbruik</h2>
+            <canvas id="myChart2" width="80"></canvas>
         </div>
         <div id="chart3">
             <h2>zuurstof level</h2>
-            <canvas id="myChart3" width="80" ></canvas>
+            <canvas id="myChart3" width="80"></canvas>
         </div>
         <div id="chart4">
-            <h2>snelheid</h2>
-            <canvas id="myChart4" width="80" ></canvas>
+            <h2>Snelheid</h2>
+            <canvas id="myChart4" width="80"></canvas>
         </div>
         <div id="chart5">
-            <canvas id="myChart5" width="100" ></canvas>
+            <h2>brandstof</h2>
+            <canvas id="myChart5" width="100"></canvas>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
@@ -69,7 +70,7 @@
                 }
             }
         });
-        var fuel = document.getElementById('myChart2').getContext('2d');
+        var fuel = document.getElementById('myChart5').getContext('2d');
         var myChart = new Chart(fuel, {
             type: 'doughnut'
             , data: {
@@ -97,29 +98,30 @@
         , });
         var snelheid = document.getElementById('myChart4').getContext('2d');
         var myChart = new Chart(snelheid, {
-                    type: 'doughnut'
-                    , data: {
-                        // labels: ["fuel", "used"],
-                        datasets: [{
-                             label: 'snelheid in km/h',
-                            data: [5000, 3000] ,
-                            backgroundColor: ['rgba(54, 162, 235, 0.2)' , '#292E3C'] , }] } , });
-        
-        var verbruik = document.getElementById("myChart5").getContext('2d');
+            type: 'doughnut'
+            , data: {
+                // labels: ["fuel", "used"],
+                datasets: [{
+                    label: 'snelheid in km/h'
+                    , data: [5000, 3000]
+                    , backgroundColor: ['rgba(54, 162, 235, 0.2)', '#292E3C']
+                , }]
+            }
+        , });
+        var verbruik = document.getElementById("myChart2").getContext('2d');
         var myChart = new Chart(verbruik, {
             type: 'line'
             , data: {
                 labels: ["Januari", "februari", "Maart", "April", "Mei"]
                 , datasets: [{
                     label: 'Water verbruik in liters'
-                    ,
-                    data: [100, 90, 200, 150, 190]
+                    , data: [100, 90, 200, 150, 190]
                     , backgroundColor: [
-                
+
                  'rgba(153, 102, 255, 0.2)'
             ]
                     , borderColor: [
-                
+
                  'rgba(153, 102, 255, 1)'
             ]
                     , borderWidth: 1

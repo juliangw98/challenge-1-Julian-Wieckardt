@@ -39,8 +39,7 @@
  
  #chart2 {
      grid-area: chart2;
-     display: flex;
-     flex-direction: row;
+    
  }
  
  #chart3 {
