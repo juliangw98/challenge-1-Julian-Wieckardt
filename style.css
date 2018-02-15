@@ -5,7 +5,8 @@
  }
  
  body {
-     background-color: #242835;
+/*     background-color: #242835;*/
+     background-image: url(images/space.jpeg);
  }
  
  @media screen and (min-width: 320px) and (max-width: 749px) {
