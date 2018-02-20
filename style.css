@@ -5,8 +5,18 @@
  }
  
  body {
-     background-color: #242835;
+     background-image: url(images/Across%20the%20Universe%20Hubble%20Ultra%20Deep%20Field%20-%20Imgur.gif);
  }
+ 
+ #container div {
+     opacity: 0.5;
+         transition: 0.5 ease;
+
+ }
+#container div:hover {
+     opacity: 1;
+    transition: 0.5s ease;
+}
  
  @media screen and (min-width: 320px) and (max-width: 749px) {
      #container {
@@ -64,8 +74,9 @@
      #chart5 {
          grid-area: chart5;
      }
- } 
-@media screen and (min-width: 1201px){
+ }
+ 
+ @media screen and (min-width: 1201px) {
      #container {
          display: grid;
          grid-template-areas: "chart1 chart1 chart2 chart2" "chart3 chart4 chart4 chart5 ";

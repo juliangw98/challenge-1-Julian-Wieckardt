@@ -69,7 +69,8 @@
                 datasets: [{
                     label: 'snelheid in km/h'
                     , data: [5000, 3000]
-                    , backgroundColor: ['rgba(54, 162, 235, 0.2)', '#292E3C']
+                    , backgroundColor: [     'rgba(75, 192, 192, 0.2)'
+, '#292E3C']
                 , }]
             }
         , });
